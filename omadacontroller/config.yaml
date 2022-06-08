@@ -6,9 +6,10 @@
     "webui": "https://[HOST]:[PORT:8043]",
     "startup": "application",
     "image" : "mbentley/omada-controller"
-    "arch": 
-      - aarch64
-      - amd64
+    "arch": [ 
+       "aarch64",
+       "amd64"
+    ],
     "ports": {
         "8088/tcp": 8088,
         "8043/tcp": 8043,
