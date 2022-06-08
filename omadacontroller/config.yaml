@@ -9,7 +9,6 @@
        "aarch64",
        "amd64"
     ],
-    "image": "mbentley/omada-controller",
     "backup_pre": "/backup.sh",
     "ports": {
         "8088/tcp": 8088,
