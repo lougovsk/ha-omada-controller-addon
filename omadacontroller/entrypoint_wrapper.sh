@@ -6,4 +6,4 @@ do
    cp -a /config/omada/$d/. /opt/tplink/EAPController/$d/
 done
 
-source /entrypoint.sh
+source /entrypoint_orig.sh
