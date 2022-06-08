@@ -11,9 +11,11 @@ pid=0
 
 # SIGTERM-handler
 term_handler() {
+  echo "SIGTERM HANDLER"
   if [ $pid -ne 0 ]; then
     kill -SIGTERM "$pid"
     wait "$pid"
+    echo "Making back up"
     /backup.sh
   fi
   exit 143; # 128 + 15 -- SIGTERM
@@ -24,8 +26,9 @@ term_handler() {
 trap 'kill ${!}; term_handler' SIGTERM
 
 # run application
-/entrypoint_orig.sh "${@}"
+/entrypoint_orig.sh "${@}" &
 pid="$!"
+echo "PID:::: " $pid
 
 # wait forever
 while true
