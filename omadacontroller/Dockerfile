@@ -1,5 +1,5 @@
 from mbentley/omada-controller:5.3
-COPY entrypoint_wrapper.sh /entrypoint_wrapper.sh
-VOLUME ["/config/omada"]
-ENTRYPOINT ["/entrypoint_wrapper.sh"] 
+#RUN mv /entrypoint.sh /entrypoint_orig.sh
+#COPY entrypoint_wrapper.sh /entrypoint.sh
+#VOLUME ["/config"]
 
