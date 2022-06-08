@@ -16,7 +16,11 @@ term_handler() {
     kill -SIGTERM "$pid"
     wait "$pid"
     echo "Making back up"
-    source /backup.sh
+    for d in data work logs
+    do
+      echo "Copying " $d 
+      cp -a /opt/tplink/EAPController/$d/. /config/omada/$d/
+    done
   fi
   exit 143; # 128 + 15 -- SIGTERM
 }
