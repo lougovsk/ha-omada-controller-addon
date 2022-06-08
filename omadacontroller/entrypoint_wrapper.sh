@@ -16,7 +16,7 @@ term_handler() {
     kill -SIGTERM "$pid"
     wait "$pid"
     echo "Making back up"
-    /backup.sh
+    source /backup.sh
   fi
   exit 143; # 128 + 15 -- SIGTERM
 }
