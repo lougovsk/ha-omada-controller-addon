@@ -32,7 +32,6 @@ trap 'kill ${!}; term_handler' SIGTERM
 # run application
 /entrypoint_orig.sh "${@}" &
 pid="$!"
-echo "PID:::: " $pid
 
 # wait forever
 while true
