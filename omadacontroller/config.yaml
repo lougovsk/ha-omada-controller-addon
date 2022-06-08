@@ -9,7 +9,7 @@
        "amd64"
     ],
     "webui": "https://[HOST]:[PORT:8043]",
-    "wait": 90,
+    "timeout": 90,
     "ingress": "true",
     "panel_title": "Omada Controller",
     "ports": {
