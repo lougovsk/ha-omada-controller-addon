@@ -8,13 +8,14 @@
        "aarch64",
        "amd64"
     ],
+    "webui": "https://[HOST]:[PORT:8043]",
     "wait": 60,
     "ingress": "true",
     "panel_title": "Omada Controller",
     "ports": {
-        "8088/tcp": 8088,
         "8043/tcp": 8043,
         "8843/tcp": 8843,
+        "8088/tcp": 8088,
         "29810/tcp": 29810,
         "29810/udp": 29810,
         "29811/tcp": 29811,
