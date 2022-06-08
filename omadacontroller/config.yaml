@@ -8,6 +8,7 @@
        "aarch64",
        "amd64"
     ],
+    "wait": 60,
     "ingress": "true",
     "panel_title": "Omada Controller",
     "ports": {
