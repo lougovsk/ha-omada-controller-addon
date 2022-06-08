@@ -9,6 +9,8 @@
        "aarch64",
        "amd64"
     ],
+    "ingress": "true",
+    "panel_title": "Omada Controller",
     "ports": {
         "8088/tcp": 8088,
         "8043/tcp": 8043,

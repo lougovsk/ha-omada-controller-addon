@@ -24,7 +24,7 @@ term_handler() {
 trap 'kill ${!}; term_handler' SIGTERM
 
 # run application
-/entrypoint_orig.sh
+/entrypoint_orig.sh "${@}"
 pid="$!"
 
 # wait forever
