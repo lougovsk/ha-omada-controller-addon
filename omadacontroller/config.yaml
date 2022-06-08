@@ -35,8 +35,7 @@
         "SSL_KEY_NAME": "tls.key",
         "TZ": "Etc/UTC"
     },
-    "map":
-      - config:rw
+    "map": ["config:rw"]
     "services": [],
     "options": {
     },
