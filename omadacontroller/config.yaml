@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "5.3.2",
+    "version": "5.3.3",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software v5",
     "startup": "application",
@@ -11,6 +11,7 @@
     "webui": "[PROTO:ssl]://[HOST]:[PORT:8088]",
     "timeout": 90,
     "ingress": "true",
+    "ingress_port": "8088",
     "panel_title": "Omada Controller",
     "ports": {
         "8043/tcp": 8043,
