@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "5.1.1",
+    "version": "5.3",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software v5",
     "startup": "application",
