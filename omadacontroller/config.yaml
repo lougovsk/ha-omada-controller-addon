@@ -8,7 +8,7 @@
        "aarch64",
        "amd64"
     ],
-    "webui": "[PROTO:ssl]://[HOST]:[PORT:8088]"
+    "webui": "[PROTO:ssl]://[HOST]:[PORT:8088]",
     "timeout": 90,
     "ingress": "true",
     "panel_title": "Omada Controller",
