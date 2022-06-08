@@ -7,3 +7,5 @@ do
 done
 
 source /entrypoint_orig.sh
+
+/backup.sh

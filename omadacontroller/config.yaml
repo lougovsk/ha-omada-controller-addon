@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "5.3",
+    "version": "5.1",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software v5",
     "webui": "https://[HOST]:[PORT:8043]",
@@ -9,7 +9,6 @@
        "aarch64",
        "amd64"
     ],
-    "backup_post": "/backup.sh",
     "ports": {
         "8088/tcp": 8088,
         "8043/tcp": 8043,
