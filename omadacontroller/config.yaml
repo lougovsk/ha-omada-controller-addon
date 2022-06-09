@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "5.3.4",
+    "version": "5.3.5",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software v5",
     "startup": "application",
@@ -13,19 +13,26 @@
     "ingress": "true",
     "ingress_stream": true,
     "panel_title": "Omada Controller",
+    "panel_icon": "mdi::router-network",
     "ports": {
         "8043/tcp": 8043,
         "8843/tcp": 8843,
         "8088/tcp": 8088,
         "29810/tcp": 29810,
-        "29810/udp": 29810,
         "29811/tcp": 29811,
-        "29811/udp": 29811,
-        "29812/tcp": 29812,
         "29812/udp": 29812,
-        "29813/tcp": 29813,
         "29813/udp": 29813,
         "29814/tcp": 29814
+    },
+    "ports_description": {
+    "29810/tcp": "omada port",
+    "29811/tcp": "omada port",
+    "29812/tcp": "omada port",
+    "29813/tcp": "omada port",
+    "29814/tcp": "omada port",
+    "8043/tcp": "web interface https",
+    "8088/tcp": "web interface",
+    "8843/tcp": "portal http"
     },
     "environment": {
         "MANAGE_HTTP_PORT": "8088",
@@ -39,7 +46,10 @@
         "SSL_KEY_NAME": "tls.key",
         "TZ": "Etc/UTC"
     },
-    "map": ["config:rw"],
+    "map": [
+      "config:rw",
+      "ssl:ro"
+    ],
     "services": [],
     "options": {
     },
