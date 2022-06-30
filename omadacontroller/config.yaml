@@ -1,6 +1,6 @@
 {
     "name": "Omada Controller",
-    "version": "5.3.6",
+    "version": "5.3.7",
     "slug": "omada_controller",
     "description": "TP-Link Omada Controller software v5",
     "startup": "application",
@@ -16,10 +16,10 @@
         "8043/tcp": 8043,
         "8843/tcp": 8843,
         "8088/tcp": 8088,
-        "29810/tcp": 29810,
+        "29810/udp": 29810,
         "29811/tcp": 29811,
-        "29812/udp": 29812,
-        "29813/udp": 29813,
+        "29812/tcp": 29812,
+        "29813/tcp": 29813,
         "29814/tcp": 29814
     },
     "ports_description": {
