@@ -1,3 +1,3 @@
-from mbentley/omada-controller:5.3
+from mbentley/omada-controller:5.4.6
 RUN mv /entrypoint.sh /entrypoint_orig.sh
 COPY entrypoint_wrapper.sh /entrypoint.sh
